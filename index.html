@@ -2,99 +2,164 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/martini-icon.svg" />
     <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body class="bg-[url('/images/noise.png')] bg-[#0E0C15]">
-    <header class="px-4 absolute top-7 w-full z-10">
-      <div
-        class="max-w-[1298px] mx-auto w-full p-3 bg-[#0f0c17]/10 rounded-xl border border-white/10 backdrop-blur-[17px] flex justify-between items-center gap-2.5"
-      >
-        <svg width="264" height="36" viewBox="0 0 264 36">
-          <use href="/icons.svg#logo-full" />
-        </svg>
-        <nav>
-          <ul
-            class="flex items-center gap-6 text-body-1 text-lg font-helvetica font-normal"
-          >
-            <li>
-              <a href="">How It Works</a>
-            </li>
-            <li>
-              <a href="">Tokenomics</a>
-            </li>
-            <li>
-              <a href="">Roadmap</a>
-            </li>
-            <li>
-              <a href="">FAQ</a>
-            </li>
-          </ul>
-        </nav>
+    <meta name="description" content="Experience Decentralized Predictions" />
 
-        <button
-          class="highlight-button text-body-1 w-full max-w-[185px] rounded-xl p-px"
-        >
-          <span
-            class="rounded-xl flex items-center justify-center gap-1 p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/otf"
+      href="/fonts/helvetica-neue/HelveticaNeueRoman.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Martini - Experience Decentralized Predictions</title>
+  </head>
+  <body class="bg-[url('/images/noise.webp')] bg-[#0E0C15]">
+    <header class="absolute mt-7 w-full z-10 isolate">
+      <div
+        class="max-w-[1298px] mx-auto w-full px-5 lg:p-3 py-7.5 lg:bg-[#0f0c17]/10 lg:rounded-xl border-b lg:border border-white/10 flex justify-between items-center gap-2.5"
+      >
+        <a href="/" class="z-10">
+          <svg width="264" height="36" viewBox="0 0 264 36">
+            <use href="/icons.svg#logo-full" />
+          </svg>
+        </a>
+        <button class="lg:hidden relative z-10 toggle-side-bar peer group">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="overflow-visible"
           >
-            <span class="leading-none">Buy $MART</span>
-            <svg width="16" height="16">
-              <use href="/icons.svg#arrow-right" />
-            </svg>
-          </span>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.75 7.5C3.75 6.80964 4.30964 6.25 5 6.25H25C25.6904 6.25 26.25 6.80964 26.25 7.5C26.25 8.19036 25.6904 8.75 25 8.75H5C4.30964 8.75 3.75 8.19036 3.75 7.5Z"
+              fill="#F5F5F5"
+              class="group-[.open]:rotate-[45deg] group-[.open]:translate-x-2.5 transition-transform duration-300 ease-out"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.25 12.5C11.25 11.8096 11.8096 11.25 12.5 11.25H25C25.6904 11.25 26.25 11.8096 26.25 12.5C26.25 13.1904 25.6904 13.75 25 13.75H12.5C11.8096 13.75 11.25 13.1904 11.25 12.5Z"
+              fill="#F5F5F5"
+              class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.75 17.5C3.75 16.8096 4.30964 16.25 5 16.25H25C25.6904 16.25 26.25 16.8096 26.25 17.5C26.25 18.1904 25.6904 18.75 25 18.75H5C4.30964 18.75 3.75 18.1904 3.75 17.5Z"
+              fill="#F5F5F5"
+              class="group-[.open]:-rotate-[45deg] group-[.open]:translate-y-3.5 group-[.open]:-translate-x-2 transition-transform duration-300 ease-out"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.25 22.5C11.25 21.8096 11.8096 21.25 12.5 21.25H25C25.6904 21.25 26.25 21.8096 26.25 22.5C26.25 23.1904 25.6904 23.75 25 23.75H12.5C11.8096 23.75 11.25 23.1904 11.25 22.5Z"
+              fill="#F5F5F5"
+              class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
+            />
+          </svg>
         </button>
+        <div
+          class="peer-[.open]:translate-x-0 translate-x-full transition-transform ease-[cubic-bezier(.1,1,.43,1)] duration-500 flex flex-col gap-10 fixed top-0 left-0 h-screen w-screen -z-10 pt-44 px-7 bg-[rgba(14,12,21,1)] lg:static lg:contents lg:bg-transparent lg:z-auto lg:px-0 lg:pt-0"
+        >
+          <nav>
+            <ul
+              class="flex items-start lg:items-center flex-col lg:flex-row gap-10 lg:gap-6 text-body-1 text-lg font-helvetica font-normal text-[32px] lg:text-base"
+            >
+              <li>
+                <a href="">How It Works</a>
+              </li>
+              <li>
+                <a href="">Tokenomics</a>
+              </li>
+              <li>
+                <a href="">Roadmap</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            class="highlight-button text-body-1 w-full max-w-[185px] rounded-xl p-px"
+          >
+            <span
+              class="rounded-xl flex items-center justify-center gap-1 p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+            >
+              <span class="leading-none">Buy $MART</span>
+              <svg width="16" height="16">
+                <use href="/icons.svg#arrow-right" />
+              </svg>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
     <main>
-      <section id="hero" class="relative pt-64">
+      <section id="hero" class="relative pt-42 md:pt-64 px-5">
         <div class="container max-w-[936px] mx-auto mb-24">
-          <svg
-            width="1248"
-            height="1248"
-            viewBox="0 0 1248 1248"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute pointer-events-none w-full max-w-[1248px] mx-auto h-auto left-1/2 -translate-x-1/2"
+          <div
+            class="absolute pointer-events-none w-full max-w-[1248px] mx-auto h-auto left-1/2 -translate-x-1/2 -translate-y-1/6 overflow-hidden flex items-center justify-center"
           >
-            <circle
-              opacity="0.05"
-              cx="624"
-              cy="624"
-              r="623.5"
-              stroke="#CAC6DD"
-            />
-            <circle
-              opacity="0.1"
-              cx="624"
-              cy="624"
-              r="526.5"
-              stroke="#CAC6DD"
-            />
-            <circle
-              opacity="0.1"
-              cx="624"
-              cy="624"
-              r="410.5"
-              stroke="#CAC6DD"
-            />
-            <circle
-              opacity="0.1"
-              cx="624"
-              cy="624"
-              r="288.5"
-              stroke="#CAC6DD"
-            />
-            <circle
-              opacity="0.1"
-              cx="624"
-              cy="624"
-              r="184.5"
-              stroke="#CAC6DD"
-            />
-          </svg>
+            <svg
+              width="1248"
+              height="1248"
+              viewBox="0 0 1248 1248"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="min-w-[569px] w-full h-auto"
+            >
+              <circle
+                opacity="0.05"
+                cx="624"
+                cy="624"
+                r="623.5"
+                stroke="#CAC6DD"
+              />
+              <circle
+                opacity="0.1"
+                cx="624"
+                cy="624"
+                r="526.5"
+                stroke="#CAC6DD"
+              />
+              <circle
+                opacity="0.1"
+                cx="624"
+                cy="624"
+                r="410.5"
+                stroke="#CAC6DD"
+              />
+              <circle
+                opacity="0.1"
+                cx="624"
+                cy="624"
+                r="288.5"
+                stroke="#CAC6DD"
+              />
+              <circle
+                opacity="0.1"
+                cx="624"
+                cy="624"
+                r="184.5"
+                stroke="#CAC6DD"
+              />
+            </svg>
+          </div>
           <div class="flex flex-col items-center text-center">
             <p
               class="highlight-button mb-8 p-px rounded-4xl shadow-[0px_4px_50px_0px_rgba(159,100,239,0.40)]"
@@ -105,11 +170,11 @@
               >
             </p>
             <h1
-              class="text-white mb-8.5 text-[56px] font-semibold font-sora leading-[67.20px]"
+              class="text-white mb-8.5 text-[40px] md:text-[56px] font-semibold font-sora leading-tight md:leading-[67.20px]"
             >
               Experience Decentralized Predictions with
               <span
-                class="relative bg-[linear-gradient(90deg,#090EDB_-150%,#E73DC4_100%)] text-transparent bg-clip-text"
+                class="relative inline-block bg-[linear-gradient(90deg,#090EDB_-150%,#E73DC4_100%)] text-transparent bg-clip-text"
               >
                 <span>Martini Market</span>
                 <svg
@@ -124,7 +189,7 @@
                 </svg>
               </span>
             </h1>
-            <p class="text-2xl text-body-2 mb-13">
+            <p class="text-lg md:text-2xl text-body-2 mb-13">
               The First Prediction Market Built on the XRP Ledger<br />Fast.
               Trustless. Permissionless.
             </p>
@@ -149,119 +214,123 @@
             </div>
           </div>
         </div>
-        <svg
-          width="1669"
-          height="1417"
-          viewBox="0 0 1669 1417"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="overflow-visible w-full absolute mix-blend-color-dodge top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20%] -z-10"
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20%] overflow-x-hidden mix-blend-color-dodge w-full flex justify-center items-center pointer-events-none"
         >
-          <g
-            style="mix-blend-mode: color-dodge"
-            filter="url(#filter0_f_5130_22406)"
+          <svg
+            width="1669"
+            height="1417"
+            viewBox="0 0 1669 1417"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="overflow-visible w-full h-auto min-w-[1050px] mix-blend-color-dodge -z-10"
           >
-            <path d="M1413 256H256V1161H1413V256Z" fill="black" />
-            <path
-              d="M1413 256H256V1161H1413V256Z"
-              fill="#907CFF"
-              fill-opacity="0.387813"
-            />
-            <mask
-              id="mask0_5130_22406"
-              style="mask-type: luminance"
-              maskUnits="userSpaceOnUse"
-              x="256"
-              y="256"
-              width="1157"
-              height="905"
+            <g
+              style="mix-blend-mode: color-dodge"
+              filter="url(#filter0_f_5130_22406)"
             >
-              <path d="M1413 256H256V1161H1413V256Z" fill="white" />
-            </mask>
-            <g mask="url(#mask0_5130_22406)">
-              <g filter="url(#filter1_f_5130_22406)">
-                <path
-                  d="M1233.67 408.153H329.759V969.819H1233.67V408.153Z"
-                  fill="#18A0FB"
-                />
-                <path
-                  d="M1361.66 287.109H556.097V770.719H1361.66V287.109Z"
-                  fill="#F2371F"
-                />
-                <path
-                  d="M1683.45 339.713H791.113V869.703H1683.45V339.713Z"
-                  fill="#EE46D3"
-                />
-                <path
-                  d="M1290.07 691.531H655.888V1163.26H1290.07V691.531Z"
-                  fill="#00C5DF"
-                />
-              </g>
-            </g>
-            <g style="mix-blend-mode: overlay">
-              <path d="M1413 256H256V1161H1413V256Z" fill="#808080" />
-            </g>
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_5130_22406"
-              x="0"
-              y="0"
-              width="1669"
-              height="1417"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
+              <path d="M1413 256H256V1161H1413V256Z" fill="black" />
+              <path
+                d="M1413 256H256V1161H1413V256Z"
+                fill="#907CFF"
+                fill-opacity="0.387813"
               />
-              <feGaussianBlur
-                stdDeviation="128"
-                result="effect1_foregroundBlur_5130_22406"
-              />
-            </filter>
-            <filter
-              id="filter1_f_5130_22406"
-              x="46.9463"
-              y="4.29688"
-              width="1919.32"
-              height="1441.78"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="141.406"
-                result="effect1_foregroundBlur_5130_22406"
-              />
-            </filter>
-            <clipPath id="clip0_5130_22406">
-              <rect
+              <mask
+                id="mask0_5130_22406"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="256"
+                y="256"
                 width="1157"
                 height="905"
-                fill="white"
-                transform="translate(256 256)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
-        <div class="container max-w-[1346px] mx-auto px-4 relative">
-          <img src="/images/monitor.png" alt="" />
+              >
+                <path d="M1413 256H256V1161H1413V256Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_5130_22406)">
+                <g filter="url(#filter1_f_5130_22406)">
+                  <path
+                    d="M1233.67 408.153H329.759V969.819H1233.67V408.153Z"
+                    fill="#18A0FB"
+                  />
+                  <path
+                    d="M1361.66 287.109H556.097V770.719H1361.66V287.109Z"
+                    fill="#F2371F"
+                  />
+                  <path
+                    d="M1683.45 339.713H791.113V869.703H1683.45V339.713Z"
+                    fill="#EE46D3"
+                  />
+                  <path
+                    d="M1290.07 691.531H655.888V1163.26H1290.07V691.531Z"
+                    fill="#00C5DF"
+                  />
+                </g>
+              </g>
+              <g style="mix-blend-mode: overlay">
+                <path d="M1413 256H256V1161H1413V256Z" fill="#808080" />
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_5130_22406"
+                x="0"
+                y="0"
+                width="1669"
+                height="1417"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="128"
+                  result="effect1_foregroundBlur_5130_22406"
+                />
+              </filter>
+              <filter
+                id="filter1_f_5130_22406"
+                x="46.9463"
+                y="4.29688"
+                width="1919.32"
+                height="1441.78"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="141.406"
+                  result="effect1_foregroundBlur_5130_22406"
+                />
+              </filter>
+              <clipPath id="clip0_5130_22406">
+                <rect
+                  width="1157"
+                  height="905"
+                  fill="white"
+                  transform="translate(256 256)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="container max-w-[1346px] mx-auto relative">
+          <img src="/images/monitor.webp" alt="" width="1346" height="888" />
         </div>
       </section>
-      <section class="relative pt-64 pb-[30vw]">
+      <section class="relative px-5 pt-20 md:pt-64 pb-[30vw] overflow-hidden">
         <div
-          class="overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 translate-y-1/6 w-full"
+          class="overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 translate-y-0 md:translate-y-1/6 w-full"
         >
           <svg width="1920" height="625" class="pointer-events-none">
             <use href="/images/wave.svg#wave-2" />
@@ -273,7 +342,7 @@
           viewBox="0 0 1417 1417"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute top-1/2 left-1/2 -translate-1/2 w-full max-w-[1417px] mix-blend-color-dodge"
+          class="absolute top-1/2 left-1/2 -translate-1/2 w-full max-w-[1417px] mix-blend-color-dodge hidden md:block"
         >
           <g
             style="mix-blend-mode: color-dodge"
@@ -374,190 +443,62 @@
           </defs>
         </svg>
         <img
-          src="/images/world.png"
+          src="/images/world.webp"
           alt="world"
-          class="mix-blend-color-dodge absolute bottom-0 w-full max-w-[1938px] left-1/2 -translate-x-1/2"
+          class="mix-blend-color-dodge absolute bottom-0 w-[1938px] max-w-none left-1/2 -translate-x-1/2"
         />
         <div
           class="w-full h-[410px] translate-y-3/4 absolute bottom-0 left-1/2 -translate-x-1/2 opacity-95 bg-[#0c0a13] blur-[60px] backdrop-blur-[60px]"
         ></div>
-        <div class="flex flex-col gap-62">
+        <div class="flex flex-col gap-40 md:gap-62">
           <div
-            class="container max-w-[1316px] mx-auto flex justify-between z-10"
+            class="container max-w-[1316px] mx-auto flex flex-col text-center lg:text-left lg:flex-row justify-between gap-12 z-10"
           >
             <div class="flex flex-col gap-4 leading-tight">
-              <h2 class="text-[40px] font-semibold font-sora text-body-1">
+              <h2
+                class="text-[32px] md:text-[40px] font-semibold font-sora text-body-1"
+              >
                 Why Martini Market?
               </h2>
-              <p class="text-2xl text-body-2">
+              <p class="text-base md:text-2xl text-body-2">
                 Forecast the Future, Fueled by the XRP Ledger
               </p>
             </div>
-            <p class="text-body-3 text-2xl max-w-[657px]">
+            <p
+              class="text-body-3 text-lg md:text-2xl max-w-[657px] mx-auto lg:mx-0"
+            >
               Martini Market is pioneering decentralized prediction markets on
               the XRP Ledger, by providing a platform where you can speculate on
               the outcomes of real world events, leveraging the speed,
               scalability and security of the XRP Ledger
             </p>
           </div>
-          <div class="mx-auto w-full flex flex-col gap-40 items-center">
+          <div
+            class="mx-auto w-full flex flex-col gap-20 md:gap-40 items-center"
+          >
             <header class="flex flex-col items-center gap-4 text-center">
               <p
-                class="highlight-button shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] mb-8 p-px rounded-4xl"
+                class="highlight-button shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] p-px rounded-full"
               >
                 <span
-                  class="px-12 py-5 text-body-1 !bg-[#0F0B15] text-center justify-start text-[38.63px] rounded-4xl inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+                  class="px-12 py-4 md:py-5 text-body-1 !bg-[#0F0B15] text-center justify-start text-2xl md:text-[38.63px] rounded-full inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
                   >How it works</span
                 >
               </p>
-              <p class="text-body-3 text-2xl max-w-[573px]">
+              <p class="text-body-3 md:text-2xl max-w-[573px]">
                 From Wallet to Winnings — Your Guide to Predicting and Profiting
                 on Martini Market
               </p>
             </header>
             <div class="flex items-center">
               <div class="relative">
-                <!-- <svg
-                  width="1417"
-                  height="1417"
-                  viewBox="0 0 1417 1417"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="mix-blend-color-dodge absolute top-1/2 left-1/2 -translate-1/2"
-                >
-                  <g
-                    style="mix-blend-mode: color-dodge"
-                    filter="url(#filter0_f_5148_23180)"
-                  >
-                    <path d="M1161 256H256V1161H1161V256Z" fill="black" />
-                    <path
-                      d="M1161 256H256V1161H1161V256Z"
-                      fill="#907CFF"
-                      fill-opacity="0.387813"
-                    />
-                    <mask
-                      id="mask0_5148_23180"
-                      style="mask-type: luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="256"
-                      y="256"
-                      width="905"
-                      height="905"
-                    >
-                      <path d="M1161 256H256V1161H1161V256Z" fill="white" />
-                    </mask>
-                    <g mask="url(#mask0_5148_23180)">
-                      <g filter="url(#filter1_f_5148_23180)">
-                        <path
-                          d="M1020.72 408.153H313.694V969.819H1020.72V408.153Z"
-                          fill="#18A0FB"
-                        >
-                          <animate
-                            attributeName="fill"
-                            values="#18A0FB;#EE46D3;#00C5DF;#18A0FB"
-                            dur="6s"
-                            repeatCount="indefinite"
-                          />
-                        </path>
-                        <path
-                          d="M1120.84 287.109H490.734V770.719H1120.84V287.109Z"
-                          fill="#F2371F"
-                        >
-                          <animate
-                            attributeName="fill"
-                            values="#F2371F;#18A0FB;#00C5DF;#F2371F"
-                            dur="6s"
-                            repeatCount="indefinite"
-                          />
-                        </path>
-                        <path
-                          d="M1372.54 339.712H674.562V869.703H1372.54V339.712Z"
-                          fill="#EE46D3"
-                        >
-                          <animate
-                            attributeName="fill"
-                            values="#EE46D3;F2371F;#18A0FB;#EE46D3"
-                            dur="6s"
-                            repeatCount="indefinite"
-                          />
-                        </path>
-                        <path
-                          d="M1064.84 691.531H568.791V1163.26H1064.84V691.531Z"
-                          fill="#00C5DF"
-                        >
-                          <animate
-                            attributeName="fill"
-                            values="#00C5DF;#EE46D3;F2371F;#00C5DF"
-                            dur="6s"
-                            repeatCount="indefinite"
-                          />
-                        </path>
-                      </g>
-                    </g>
-                    <g style="mix-blend-mode: overlay">
-                      <path d="M1161 256H256V1161H1161V256Z" fill="#808080" />
-                    </g>
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_5148_23180"
-                      x="0"
-                      y="0"
-                      width="1417"
-                      height="1417"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="128"
-                        result="effect1_foregroundBlur_5148_23180"
-                      />
-                    </filter>
-                    <filter
-                      id="filter1_f_5148_23180"
-                      x="30.8812"
-                      y="4.29688"
-                      width="1624.48"
-                      height="1441.78"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="141.406"
-                        result="effect1_foregroundBlur_5148_23180"
-                      />
-                    </filter>
-                    <clipPath id="clip0_5148_23180">
-                      <rect
-                        width="905"
-                        height="905"
-                        fill="white"
-                        transform="translate(256 256)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg> -->
                 <svg
                   width="1417"
                   height="1417"
                   viewBox="0 0 1417 1417"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="mix-blend-color-dodge absolute top-1/2 left-1/2 -translate-1/2 pointer-events-none"
+                  class="mix-blend-color-dodge absolute top-1/2 left-1/2 -translate-1/2 pointer-events-none hidden md:block"
                 >
                   <g
                     style="mix-blend-mode: color-dodge"
@@ -658,19 +599,21 @@
                   </defs>
                 </svg>
                 <img
-                  src="/images/x-image.png"
+                  src="/images/x-image.webp"
                   alt="x image"
-                  class="mix-blend-lighten"
+                  class="mix-blend-lighten hidden md:block"
+                  width="800"
+                  height="450"
                 />
               </div>
               <div
-                class="grid max-w-[746px] w-full grid-cols-[repeat(auto-fit,minmax(0px,343px))] gap-x-15 gap-y-22"
+                class="grid max-w-[746px] w-full md:grid-cols-[repeat(auto-fit,minmax(0px,343px))] text-center md:text-left gap-x-15 gap-y-12 md:gap-y-22"
               >
                 <div class="flex flex-col gap-6">
                   <h3 class="text-white text-2xl font-medium leading-none">
                     Explore Markets
                   </h3>
-                  <p class="text-xl text-body-3">
+                  <p class="text-xl text-body-3 font-light md:font-normal">
                     Connect your XRPL wallet and browse live markets across
                     multiple categories — politics, sports, asset prices, and
                     more.
@@ -678,32 +621,30 @@
                 </div>
                 <div class="flex flex-col gap-6">
                   <h3 class="text-white text-2xl font-medium leading-none">
-                    Explore Markets
+                    Place Your Bets
                   </h3>
-                  <p class="text-xl text-body-3">
-                    Connect your XRPL wallet and browse live markets across
-                    multiple categories — politics, sports, asset prices, and
-                    more.
+                  <p class="text-xl text-body-3 font-light md:font-normal">
+                    Use XRP to bet on your chosen outcome with our clean,
+                    intuitive interface.
                   </p>
                 </div>
                 <div class="flex flex-col gap-6">
                   <h3 class="text-white text-2xl font-medium leading-none">
-                    Explore Markets
+                    Monitor & Adjust
                   </h3>
-                  <p class="text-xl text-body-3">
-                    Connect your XRPL wallet and browse live markets across
-                    multiple categories — politics, sports, asset prices, and
-                    more.
+                  <p class="text-xl text-body-3 font-light md:font-normal">
+                    Track your positions in real time. Buy or sell shares as
+                    probabilities shift.
                   </p>
                 </div>
                 <div class="flex flex-col gap-6">
                   <h3 class="text-white text-2xl font-medium leading-none">
-                    Explore Markets
+                    Win & Earn
                   </h3>
-                  <p class="text-xl text-body-3">
-                    Connect your XRPL wallet and browse live markets across
-                    multiple categories — politics, sports, asset prices, and
-                    more.
+                  <p class="text-xl text-body-3 font-light md:font-normal">
+                    In conclusion of each market event, markets settle
+                    automatically. Winnings are distributed via smart contracts,
+                    fast and trustless.
                   </p>
                 </div>
               </div>
@@ -711,140 +652,146 @@
           </div>
         </div>
       </section>
-      <section class="relative pt-64 pb-[10vw]">
+      <section class="relative px-5 pt-16 md:pt-64 pb-[10vw]">
         <div
-          class="overflow-hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-3/5 w-full"
+          class="overflow-x-hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-5/6 md:translate-y-3/5 w-full flex items-center"
         >
           <svg width="1920" height="625" class="pointer-events-none">
             <use href="/images/wave.svg#wave-1" />
           </svg>
         </div>
-        <svg
-          width="1417"
-          height="1417"
-          viewBox="0 0 1417 1417"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 mix-blend-color-dodge"
+        <div
+          class="overflow-hidden w-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 mix-blend-color-dodge items-center justify-center hidden md:flex"
         >
-          <g
-            style="mix-blend-mode: color-dodge"
-            filter="url(#filter0_f_5130_22405)"
+          <svg
+            width="1417"
+            height="1417"
+            viewBox="0 0 1417 1417"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="pointer-events-none"
           >
-            <path d="M1161 256H256V1161H1161V256Z" fill="black" />
-            <path
-              d="M1161 256H256V1161H1161V256Z"
-              fill="#907CFF"
-              fill-opacity="0.387813"
-            />
-            <mask
-              id="mask0_5130_22405"
-              style="mask-type: luminance"
-              maskUnits="userSpaceOnUse"
-              x="256"
-              y="256"
-              width="905"
-              height="905"
+            <g
+              style="mix-blend-mode: color-dodge"
+              filter="url(#filter0_f_5130_22405)"
             >
-              <path d="M1161 256H256V1161H1161V256Z" fill="white" />
-            </mask>
-            <g mask="url(#mask0_5130_22405)">
-              <g filter="url(#filter1_f_5130_22405)">
-                <path
-                  d="M1020.72 408.153H313.694V969.819H1020.72V408.153Z"
-                  fill="#18A0FB"
-                />
-                <path
-                  d="M1120.84 287.109H490.734V770.719H1120.84V287.109Z"
-                  fill="#F2371F"
-                />
-                <path
-                  d="M1372.54 339.712H674.562V869.703H1372.54V339.712Z"
-                  fill="#EE46D3"
-                />
-                <path
-                  d="M1064.84 691.531H568.791V1163.26H1064.84V691.531Z"
-                  fill="#00C5DF"
-                />
-              </g>
-            </g>
-            <g style="mix-blend-mode: overlay">
-              <path d="M1161 256H256V1161H1161V256Z" fill="#808080" />
-            </g>
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_5130_22405"
-              x="0"
-              y="0"
-              width="1417"
-              height="1417"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
+              <path d="M1161 256H256V1161H1161V256Z" fill="black" />
+              <path
+                d="M1161 256H256V1161H1161V256Z"
+                fill="#907CFF"
+                fill-opacity="0.387813"
               />
-              <feGaussianBlur
-                stdDeviation="128"
-                result="effect1_foregroundBlur_5130_22405"
-              />
-            </filter>
-            <filter
-              id="filter1_f_5130_22405"
-              x="30.8812"
-              y="4.29688"
-              width="1624.47"
-              height="1441.78"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="141.406"
-                result="effect1_foregroundBlur_5130_22405"
-              />
-            </filter>
-            <clipPath id="clip0_5130_22405">
-              <rect
+              <mask
+                id="mask0_5130_22405"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="256"
+                y="256"
                 width="905"
                 height="905"
-                fill="white"
-                transform="translate(256 256)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
+              >
+                <path d="M1161 256H256V1161H1161V256Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_5130_22405)">
+                <g filter="url(#filter1_f_5130_22405)">
+                  <path
+                    d="M1020.72 408.153H313.694V969.819H1020.72V408.153Z"
+                    fill="#18A0FB"
+                  />
+                  <path
+                    d="M1120.84 287.109H490.734V770.719H1120.84V287.109Z"
+                    fill="#F2371F"
+                  />
+                  <path
+                    d="M1372.54 339.712H674.562V869.703H1372.54V339.712Z"
+                    fill="#EE46D3"
+                  />
+                  <path
+                    d="M1064.84 691.531H568.791V1163.26H1064.84V691.531Z"
+                    fill="#00C5DF"
+                  />
+                </g>
+              </g>
+              <g style="mix-blend-mode: overlay">
+                <path d="M1161 256H256V1161H1161V256Z" fill="#808080" />
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_5130_22405"
+                x="0"
+                y="0"
+                width="1417"
+                height="1417"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="128"
+                  result="effect1_foregroundBlur_5130_22405"
+                />
+              </filter>
+              <filter
+                id="filter1_f_5130_22405"
+                x="30.8812"
+                y="4.29688"
+                width="1624.47"
+                height="1441.78"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="141.406"
+                  result="effect1_foregroundBlur_5130_22405"
+                />
+              </filter>
+              <clipPath id="clip0_5130_22405">
+                <rect
+                  width="905"
+                  height="905"
+                  fill="white"
+                  transform="translate(256 256)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
 
         <div
           class="max-w-[1136px] mx-auto w-full flex flex-col gap-13 items-center"
         >
           <header class="flex flex-col items-center gap-4 text-center">
             <p
-              class="highlight-button shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] mb-8 p-px rounded-full"
+              class="highlight-button shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] p-px rounded-full"
             >
               <span
-                class="px-12 py-5 text-body-1 !bg-[#0F0B15] text-center justify-start text-[38.63px] rounded-full inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+                class="px-9 md:px-12 py-4 md:py-5 text-body-1 !bg-[#0F0B15] text-center justify-start text-2xl md:text-[38.63px] rounded-full inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
                 >Our Roadmap</span
               >
             </p>
-            <p class="text-body-3 text-2xl max-w-[573px]">
+            <p class="text-body-3 md:text-2xl max-w-[573px]">
               A step-by-step breakdown of Martini Market's development phases,
               from prototype to full decentralization.
             </p>
           </header>
           <div class="flex flex-col items-center gap-13 w-full">
-            <div class="relative w-full h-[9px] bg-[#88a4cb] rounded-[60px]">
+            <div
+              class="relative w-full h-[9px] bg-[#88a4cb] rounded-[60px] hidden lg:block"
+            >
               <div
                 class="h-full relative rounded-[inherit] w-[20%] bg-[linear-gradient(to_right,#4BF2B7,#5061DF,#F1C7BD)]"
               >
@@ -867,9 +814,11 @@
                 class="absolute h-[17px] w-px bg-[#3F3F46] top-1/2 -translate-y-1/2 left-[70%]"
               ></div>
             </div>
-            <div class="flex items-center justify-around w-full *:flex-1">
+            <div
+              class="flex items-center justify-around flex-wrap w-full *:flex-1 *:min-w-[360px] gap-7.5 lg:gap-0"
+            >
               <div
-                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[460px] md:min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
                 <header class="px-9 py-10">
                   <h3 class="text-body-2 text-[32px] font-medium">Q2 - 2025</h3>
@@ -910,7 +859,7 @@
                 ></div>
               </div>
               <div
-                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[460px] md:min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
                 <header class="px-9 py-10">
                   <h3 class="text-body-2 text-[32px] font-medium">Q3 - 2025</h3>
@@ -967,7 +916,7 @@
                 ></div>
               </div>
               <div
-                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+                class="w-full border border-[#6ddcff] max-w-[361px] min-h-[460px] md:min-h-[535px] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
                 <header class="px-9 py-10">
                   <h3 class="text-body-2 text-[32px] font-medium">Q4 - 2025</h3>
@@ -1015,14 +964,14 @@
           </div>
         </div>
       </section>
-      <section class="relative pt-64 pb-44">
+      <section class="relative pt-44 md:pt-64 pb-30 md:pb-44">
         <svg
           width="1651"
           height="1660"
           viewBox="0 0 1651 1660"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute w-full h-auto top-1/2 left-1/2 -translate-1/2 mix-blend-color-dodge pointer-events-none"
+          class="absolute w-full h-auto top-1/2 left-1/2 -translate-1/2 mix-blend-color-dodge pointer-events-none hidden md:block"
         >
           <g
             style="mix-blend-mode: color-dodge"
@@ -1138,7 +1087,7 @@
           viewBox="0 0 1248 1248"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute -translate-y-1/15 -z-10 pointer-events-none w-full max-w-[1257px] mx-auto h-auto left-1/2 -translate-x-1/2"
+          class="absolute -translate-y-1/15 -z-10 pointer-events-none w-full max-w-[1257px] mx-auto h-auto left-1/2 -translate-x-1/2 hidden md:block"
         >
           <circle opacity="0.05" cx="624" cy="624" r="623.5" stroke="#CAC6DD" />
           <circle opacity="0.1" cx="624" cy="624" r="526.5" stroke="#CAC6DD" />
@@ -1147,36 +1096,38 @@
           <circle opacity="0.1" cx="624" cy="624" r="184.5" stroke="#CAC6DD" />
         </svg>
         <div
-          class="max-w-[1136px] relative mx-auto w-full flex flex-col gap-10 items-center"
+          class="max-w-[1136px] relative mx-auto w-full flex flex-col gap-18 md:gap-10 items-center"
         >
           <header class="flex flex-col items-center gap-4 text-center">
             <p
-              class="highlight-button w-full max-w-[311px] shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] p-px rounded-full"
+              class="highlight-button w-full max-w-[229px] md:max-w-[311px] shadow-[inset_0px_0px_23.180124282836914px_0px_rgba(255,255,255,0.20),0px_7.726707935333252px_96.58384704589844px_0px_rgba(159,100,239,0.40)] p-px rounded-full"
             >
               <span
-                class="px-12 w-full py-5 text-body-1 !bg-[#0F0B15] text-center justify-start text-[38.63px] rounded-full inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+                class="px-9 md:px-12 py-4 md:py-5 w-full text-body-1 !bg-[#0F0B15] text-center justify-start text-2xl md:text-[38.63px] rounded-full inline-block leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
                 >FAQ</span
               >
             </p>
-            <p class="text-body-3 text-2xl max-w-[573px]">
+            <p class="text-body-3 text-base md:text-2xl max-w-[573px]">
               Got questions? We've got answers.
             </p>
           </header>
           <ul
-            class="flex flex-col gap-4 rounded-[20px] border border-[#101131]/50 overflow-hidden p-10 w-full relative bg-[linear-gradient(45deg,rgba(0,0,0,0.16),rgba(83,84,108,0.16))] backdrop-blur-lg"
+            class="faq-list flex flex-col gap-4 rounded-[20px] md:border border-[#20202C] overflow-hidden p-5 md:p-10 w-full relative md:bg-[linear-gradient(45deg,rgba(0,0,0,0.16),rgba(83,84,108,0.16))] backdrop-blur-lg"
           >
             <li
-              class="p-6 rounded-[20px] overflow-hidden border border-[#101131]/50 flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+              class="p-6 rounded-[20px] overflow-hidden border border-[#20202C] flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
             >
               <h3
-                class="text-white text-2xl font-semibold font-sora flex items-center justify-between cursor-pointer"
+                class="text-white text-xl md:text-2xl md:font-semibold font-sora flex items-center justify-between cursor-pointer"
               >
                 <span class="leading-none">What is Martini Market?</span>
                 <svg width="24" height="24">
                   <use href="/icons.svg#arrow-down" />
                 </svg>
               </h3>
-              <div class="overflow-hidden">
+              <div
+                class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-out"
+              >
                 <p class="text-body-2 text-lg mt-5">
                   Martini Market is a decentralized prediction market built on
                   the XRP Ledger, enabling $MART token holders to create markets
@@ -1186,17 +1137,19 @@
               </div>
             </li>
             <li
-              class="p-6 rounded-[20px] overflow-hidden border border-[#101131]/50 flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+              class="p-6 rounded-[20px] overflow-hidden border border-[#20202C] flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
             >
               <h3
-                class="text-white text-2xl font-semibold font-sora flex items-center justify-between cursor-pointer"
+                class="text-white text-xl md:text-2xl md:font-semibold font-sora flex items-center justify-between cursor-pointer"
               >
                 <span class="leading-none">Which wallets can I use?</span>
                 <svg width="24" height="24">
                   <use href="/icons.svg#arrow-down" />
                 </svg>
               </h3>
-              <div class="overflow-hidden">
+              <div
+                class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-out"
+              >
                 <p class="text-body-2 text-lg mt-5">
                   You can use any wallet compatible with the XRP Ledger, such as
                   Xaman or Ledger hardware wallets.
@@ -1204,10 +1157,10 @@
               </div>
             </li>
             <li
-              class="p-6 rounded-[20px] overflow-hidden border border-[#101131]/50 flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+              class="p-6 rounded-[20px] overflow-hidden border border-[#20202C] flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
             >
               <h3
-                class="text-white text-2xl font-semibold font-sora flex items-center justify-between cursor-pointer"
+                class="text-white text-xl md:text-2xl md:font-semibold font-sora flex items-center justify-between cursor-pointer"
               >
                 <span class="leading-none"
                   >How are market outcomes determined?</span
@@ -1216,7 +1169,9 @@
                   <use href="/icons.svg#arrow-down" />
                 </svg>
               </h3>
-              <div class="overflow-hidden">
+              <div
+                class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-out"
+              >
                 <p class="text-body-2 text-lg mt-5">
                   Markets are resolved using decentralized oracle solutions
                   integrated directly into the XRP Ledger. This ensures
@@ -1225,17 +1180,19 @@
               </div>
             </li>
             <li
-              class="p-6 rounded-[20px] overflow-hidden border border-[#101131]/50 flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+              class="p-6 rounded-[20px] overflow-hidden border border-[#20202C] flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
             >
               <h3
-                class="text-white text-2xl font-semibold font-sora flex items-center justify-between cursor-pointer"
+                class="text-white text-xl md:text-2xl md:font-semibold font-sora flex items-center justify-between cursor-pointer"
               >
                 <span class="leading-none">What is the $MART token?</span>
                 <svg width="24" height="24">
                   <use href="/icons.svg#arrow-down" />
                 </svg>
               </h3>
-              <div class="overflow-hidden">
+              <div
+                class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-out"
+              >
                 <p class="text-body-2 text-lg mt-5">
                   $MART is Martini Market's native utility token with a capped
                   supply of 10 million. It is used for governance, market
@@ -1244,17 +1201,19 @@
               </div>
             </li>
             <li
-              class="p-6 rounded-[20px] overflow-hidden border border-[#101131]/50 flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
+              class="p-6 rounded-[20px] overflow-hidden border border-[#20202C] flex flex-col relative before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
             >
               <h3
-                class="text-white text-2xl font-semibold font-sora flex items-center justify-between cursor-pointer"
+                class="text-white text-xl md:text-2xl md:font-semibold font-sora flex items-center justify-between cursor-pointer"
               >
                 <span class="leading-none">How can I buy MTM tokens?</span>
                 <svg width="24" height="24">
                   <use href="/icons.svg#arrow-down" />
                 </svg>
               </h3>
-              <div class="overflow-hidden">
+              <div
+                class="overflow-hidden max-h-0 transition-[max-height] duration-500 ease-out"
+              >
                 <p class="text-body-2 text-lg mt-5">
                   The $MART token isn't publicly available, however you can
                   purchase $MART tokens during the public presale event or later
@@ -1266,17 +1225,18 @@
         </div>
       </section>
     </main>
-    <footer class="relative p-4 md:p-10 flex flex-col gap-19">
+    <footer class="relative p-4 pb-18 mb:pb-10 md:p-10 flex flex-col gap-19">
       <div
         class="w-full pb-11 mx-auto flex flex-col gap-5.5 items-center text-white border-b border-white/10"
       >
         <h2 class="text-2xl font-semibold font-sora">Join the Community</h2>
-        <p class="text-xl">
+        <p class="md:text-xl text-center">
           Stay updated, participate, and connect with fellow forecasters:
         </p>
         <div class="gap-7 flex items-center justify-center">
           <a
             href=""
+            aria-label="X profile link"
             class="size-[52.17px] bg-[#1b1530] rounded-full flex justify-center items-center"
           >
             <svg width="26" height="23">
@@ -1285,6 +1245,7 @@
           </a>
           <a
             href=""
+            aria-label="telegram profile link"
             class="size-[52.17px] bg-[#1b1530] rounded-full flex justify-center items-center"
           >
             <svg width="24" height="24">
@@ -1293,6 +1254,7 @@
           </a>
           <a
             href=""
+            aria-label="discord server link"
             class="size-[52.17px] bg-[#1b1530] rounded-full flex justify-center items-center"
           >
             <svg width="31" height="24">
@@ -1301,13 +1263,15 @@
           </a>
         </div>
       </div>
-      <div class="flex items-center justify-between">
+      <div
+        class="flex items-center justify-between flex-col md:flex-row gap-10"
+      >
         <svg width="264" height="36" viewBox="0 0 264 36">
           <use href="/icons.svg#logo-full" />
         </svg>
         <nav>
           <ul
-            class="flex items-center gap-6 text-body-1 text-lg font-helvetica font-normal"
+            class="flex items-center flex-wrap gap-6 justify-center text-body-1 text-lg font-helvetica font-normal"
           >
             <li>
               <a href="">Litepaper</a>
