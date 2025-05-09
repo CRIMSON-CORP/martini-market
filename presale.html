@@ -20,17 +20,17 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://unpkg.com/@pqina/flip/dist/flip.min.css"
       rel="stylesheet"
-    />
+    /> -->
 
     <title>Martini - Experience Decentralized Predictions</title>
   </head>
   <body
     class="md:bg-[url('/images/noise.webp')] bg-[#0E0C15] min-h-screen flex flex-col"
   >
-    <header class="absolute md:mt-7 w-full z-10 isolate">
+    <header class="absolute md:px-5 md:mt-7 w-full z-10 isolate">
       <div
         class="max-w-[1298px] mx-auto w-full px-5 lg:p-3 py-7.5 lg:bg-[#0f0c17]/10 lg:rounded-xl border-b lg:border border-white/10 flex justify-between items-center gap-2.5"
       >
@@ -44,67 +44,12 @@
             <use href="/icons.svg#logo-full" />
           </svg>
         </a>
-        <button class="lg:hidden relative z-10 toggle-side-bar peer group">
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="overflow-visible"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3.75 7.5C3.75 6.80964 4.30964 6.25 5 6.25H25C25.6904 6.25 26.25 6.80964 26.25 7.5C26.25 8.19036 25.6904 8.75 25 8.75H5C4.30964 8.75 3.75 8.19036 3.75 7.5Z"
-              fill="#F5F5F5"
-              class="group-[.open]:rotate-[45deg] group-[.open]:translate-x-2.5 transition-transform duration-300 ease-out"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M11.25 12.5C11.25 11.8096 11.8096 11.25 12.5 11.25H25C25.6904 11.25 26.25 11.8096 26.25 12.5C26.25 13.1904 25.6904 13.75 25 13.75H12.5C11.8096 13.75 11.25 13.1904 11.25 12.5Z"
-              fill="#F5F5F5"
-              class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3.75 17.5C3.75 16.8096 4.30964 16.25 5 16.25H25C25.6904 16.25 26.25 16.8096 26.25 17.5C26.25 18.1904 25.6904 18.75 25 18.75H5C4.30964 18.75 3.75 18.1904 3.75 17.5Z"
-              fill="#F5F5F5"
-              class="group-[.open]:-rotate-[45deg] group-[.open]:translate-y-3.5 group-[.open]:-translate-x-2 transition-transform duration-300 ease-out"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M11.25 22.5C11.25 21.8096 11.8096 21.25 12.5 21.25H25C25.6904 21.25 26.25 21.8096 26.25 22.5C26.25 23.1904 25.6904 23.75 25 23.75H12.5C11.8096 23.75 11.25 23.1904 11.25 22.5Z"
-              fill="#F5F5F5"
-              class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
-            />
-          </svg>
-        </button>
-        <div
-          class="peer-[.open]:translate-x-0 translate-x-full transition-transform ease-[cubic-bezier(.1,1,.43,1)] duration-500 flex flex-col gap-10 fixed top-0 left-0 h-screen w-screen -z-10 pt-44 px-7 bg-[rgba(14,12,21,1)] lg:static lg:contents lg:bg-transparent lg:z-auto lg:px-0 lg:pt-0"
-        >
-          <button
-            class="highlight-button text-body-1 w-full max-w-[185px] rounded-xl p-px"
-          >
-            <span
-              class="rounded-xl flex items-center justify-center gap-1 p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
-            >
-              <span class="leading-none">Buy $MART</span>
-              <svg width="16" height="16">
-                <use href="/icons.svg#arrow-right" />
-              </svg>
-            </span>
-          </button>
-        </div>
       </div>
     </header>
     <main>
-      <section id="hero" class="relative pt-42 md:pt-64 px-5">
+      <section id="hero" class="relative pt-42 md:pt-58 px-5 pb-44">
         <div
-          class="container max-w-[1322px] mx-auto mb-24 flex items-center gap-13 flex-col lg:flex-row"
+          class="container max-w-[1322px] mx-auto mb-24 flex flex-col items-center justify-center gap-20 md:gap-26"
         >
           <div
             class="absolute max-w-[1700px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-[20%] overflow-x-hidden mix-blend-color-dodge w-full flex justify-center items-center pointer-events-none -z-10"
@@ -217,6 +162,13 @@
             </svg>
           </div>
           <div
+            class="overflow-hidden absolute top-full left-1/2 -translate-x-1/2 -translate-y-19/20 w-full -z-20"
+          >
+            <svg width="1920" height="625" class="pointer-events-none">
+              <use href="/images/wave.svg#wave-2" />
+            </svg>
+          </div>
+          <div
             class="absolute pointer-events-none w-full max-w-[1248px] mx-auto h-auto left-1/2 -translate-x-1/2 translate-y-1/16 overflow-hidden flex items-center justify-center"
           >
             <svg
@@ -264,68 +216,15 @@
               />
             </svg>
           </div>
-          <div
-            class="flex flex-col items-center md:items-start max-w-[580px] text-center md:text-left"
+          <h1
+            class="text-white text-[46px] md:text-[56px] md:font-semibold font-sora text-center leading-none"
           >
-            <p
-              class="highlight-button mb-8 p-px rounded-4xl shadow-[0px_4px_50px_0px_rgba(159,100,239,0.40)]"
-            >
-              <span
-                class="px-3.5 py-2.5 text-body-1 rounded-4xl inline-block font-medium leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
-                >Powered By The XRP Ledger (XRPL)</span
-              >
-            </p>
-            <h1
-              class="text-white mb-8.5 text-[40px] md:text-[56px] font-semibold font-sora leading-tight md:leading-[67.20px]"
-            >
-              Join the Future of Predictive Markets — Be Early with
-              <span
-                class="relative inline-block bg-[linear-gradient(90deg,#090EDB_-150%,#E73DC4_100%)] text-transparent bg-clip-text"
-              >
-                <span>Martini Market</span>
-                <svg
-                  width="411"
-                  height="18"
-                  viewBox="0 0 411 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute w-full max-w-[1248px] mx-auto h-auto left-1/2 -translate-x-1/2"
-                >
-                  <use href="/icons.svg#underline" />
-                </svg>
-              </span>
-            </h1>
-            <p class="text-lg md:text-2xl text-body-2 mb-13 max-w-[530px]">
-              Tap into the power of decentralized prediction markets. Secure
-              your spot in the presale and shape the next generation of
-              forecasting.
-            </p>
-            <div
-              class="flex items-center gap-4 w-full justify-center md:justify-start"
-            >
-              <button
-                class="highlight-button text-body-1 w-full max-w-[203px] rounded-xl p-px"
-              >
-                <span
-                  class="rounded-xl flex items-center justify-center gap-1 p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
-                >
-                  <span class="leading-none">Join Presale</span>
-                  <svg width="16" height="16">
-                    <use href="/icons.svg#arrow-right" />
-                  </svg>
-                </span>
-              </button>
-              <button
-                class="w-full p-5 max-w-[203px] rounded-xl bg-[#2090ff] text-white leading-none"
-              >
-                Join Telegram
-              </button>
-            </div>
-          </div>
+            Join $MART Presale
+          </h1>
           <div
-            class="w-full flex-1 flex flex-col relative bg-[linear-gradient(45deg,#020201a8,#151626ab)] rounded-[20px] border-2 border-[#6ddcff] px-4 md:px-12 pb-7 pt-14"
+            class="w-full max-w-[689px] flex flex-col relative bg-[linear-gradient(45deg,#020201a8,#151626ab)] rounded-[40px] border-2 border-[#6ddcff] px-4 md:px-12 pb-7 pt-14"
           >
-            <div class="tick mb-12" data-did-init="handleTickInit">
+            <div class="tick mb-9" data-did-init="handleTickInit">
               <div
                 data-repeat="true"
                 data-layout="horizontal fit"
@@ -352,8 +251,8 @@
               class="!absolute top-0 left-1/2 -translate-1/2 highlight-button mb-8 p-px rounded-4xl shadow-[0px_4px_50px_0px_rgba(159,100,239,0.40)]"
             >
               <span
-                class="px-3.5 py-2.5 whitespace-nowrap text-body-1 rounded-4xl inline-block font-medium leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
-                >Powered By The XRP Ledger (XRPL)</span
+                class="px-3.5 py-2.5 whitespace-nowrap text-sm md:text-2xl text-body-1 rounded-4xl inline-block font-medium leading-none shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+                >$MART Presale Starts In</span
               >
             </p>
 
@@ -361,18 +260,40 @@
               class="max-w-[451px] w-full h-0.5 self-center bg-[linear-gradient(90deg,#6DDCFF00_19%,#6DDCFF_39%,#7F60F9_54%,#7F60F900_76%)] mb-6"
             ></div>
             <div
-              class="max-w-[455px] mb-14 w-full mx-auto bg-black rounded-[10px] shadow-[0px_0px_91.44390106201172px_0.7398374080657959px_rgba(0,198,145,0.10)] border border-[#3A3A3A] overflow-hidden flex justify-between items-center p-5 text-white text-xl"
+              class="max-w-[455px] mb-6 w-full mx-auto bg-black rounded-[10px] shadow-[0px_0px_91.44390106201172px_0.7398374080657959px_rgba(0,198,145,0.10)] border border-[#3A3A3A] overflow-hidden flex justify-between items-center p-5 text-white text-xs md:text-xl"
             >
               <span class="leading-tight">Presale Price:</span
               ><span class="text-body-1 font-bold">1 $MART = 0.004 XRP</span>
             </div>
-            <div
-              class="flex flex-col w-full text-white text-sm md:text-lg gap-8 mb-20"
-            >
-              <div class="flex items-center justify-between">
-                <p>Progress Bar</p>
-                <p class="font-bold text-right">30,000 XRP/100,000 XRP</p>
+            <div class="flex flex-col gap-1 md:gap-2 mb-9 md:mb-18">
+              <p class="text-white text-xs md:text-lg font-bold">XRP</p>
+              <div class="bg-[#0F1F51] rounded-md h-6 md:h-9 relative">
+                <div
+                  class="absolute h-full w-[30%] bg-[#090EDB] rounded-[inherit]"
+                >
+                  <div
+                    class="absolute h-[calc(100%+6px)] md:h-[calc(100%+10px)] w-[3px] bg-white right-0"
+                  ></div>
+                  <span
+                    class="absolute right-0 top-[calc(100%+6px)] md:top-[calc(100%+10px)] translate-x-1/2 text-body-1 text-xs md:text-lg"
+                  >
+                    30%
+                  </span>
+                </div>
+                <span
+                  class="text-white text-xs md:text-lg font-medium absolute right-1.5 md:right-5 top-1/2 -translate-y-1/2"
+                  >30,000/100,000</span
+                >
               </div>
+              <div
+                class="flex justify-between items-center text-body-1 text-xs md:text-lg"
+              >
+                <span>0%</span><span>100%</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col w-full text-white text-[11px] md:text-lg gap-4 md:gap-8 mb-8 md:mb-20"
+            >
               <div class="flex items-center justify-between">
                 <p>Token Name: Martini Market</p>
                 <p class="font-bold text-right">
@@ -395,6 +316,7 @@
               </div>
             </div>
             <button
+              id="open-modal"
               class="w-full p-5 rounded-xl bg-[#2090ff] text-white leading-none flex items-center justify-center gap-1 border border-[#ffe1e149]"
             >
               <span class="leading-none">Buy $MART</span>
@@ -478,7 +400,153 @@
         </p>
       </div>
     </footer>
-    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+    <aside
+      id="modal"
+      class="fixed inset-0 bg-black/10 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none [&.open]:opacity-100 [&.open]:pointer-events-auto transition-opacity duration-500 group"
+    >
+      <div
+        class="w-full max-w-[721px] bg-[#0D0C14] relative bg-[linear-gradient(45deg,#020201a8,#151626ab)] rounded-[20px] outline-2 outline-[#6ddcff] py-5 px-2 md:px-4 scale-125 opacity-0 group-[.open]:opacity-100 group-[.open]:scale-100 transition-[transform,opacity,scale] ease-[cubic-bezier(.1,1,.43,1)] duration-700 group-[.open]:delay-100"
+      >
+        <div
+          class="overflow-hidden absolute top-full left-1/2 -translate-x-1/2 -translate-y-19/20 w-full -z-20"
+        >
+          <svg width="1920" height="625" class="pointer-events-none">
+            <use href="/images/wave.svg#wave-2" />
+          </svg>
+        </div>
+        <div
+          class="flex flex-col md:px-4 h-[100vh] md:max-h-[90vh] overflow-auto modal-scroll pb-24"
+        >
+          <header class="px-8 pt-6 flex justify-end">
+            <button class="relative z-10 close-modal group open">
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overflow-visible"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 7.5C3.75 6.80964 4.30964 6.25 5 6.25H25C25.6904 6.25 26.25 6.80964 26.25 7.5C26.25 8.19036 25.6904 8.75 25 8.75H5C4.30964 8.75 3.75 8.19036 3.75 7.5Z"
+                  fill="#F5F5F5"
+                  class="group-[.open]:rotate-[45deg] group-[.open]:translate-x-2.5 transition-transform duration-300 ease-out"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.25 12.5C11.25 11.8096 11.8096 11.25 12.5 11.25H25C25.6904 11.25 26.25 11.8096 26.25 12.5C26.25 13.1904 25.6904 13.75 25 13.75H12.5C11.8096 13.75 11.25 13.1904 11.25 12.5Z"
+                  fill="#F5F5F5"
+                  class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.75 17.5C3.75 16.8096 4.30964 16.25 5 16.25H25C25.6904 16.25 26.25 16.8096 26.25 17.5C26.25 18.1904 25.6904 18.75 25 18.75H5C4.30964 18.75 3.75 18.1904 3.75 17.5Z"
+                  fill="#F5F5F5"
+                  class="group-[.open]:-rotate-[45deg] group-[.open]:translate-y-3.5 group-[.open]:-translate-x-2 transition-transform duration-300 ease-out"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.25 22.5C11.25 21.8096 11.8096 21.25 12.5 21.25H25C25.6904 21.25 26.25 21.8096 26.25 22.5C26.25 23.1904 25.6904 23.75 25 23.75H12.5C11.8096 23.75 11.25 23.1904 11.25 22.5Z"
+                  fill="#F5F5F5"
+                  class="group-[.open]:opacity-0 group-[.open]:translate-x-full transition-transform duration-300 ease-out"
+                />
+              </svg>
+            </button>
+          </header>
+          <div class="flex flex-col items-center pt-24 md:pt-0">
+            <h2
+              class="text-white text-[40px] font-semibold font-sora text-center mb-9"
+            >
+              Join the MART Pre-Sale
+            </h2>
+            <div
+              class="overflow-hidden rounded-[20px] outline-2 outline-[#6ddcff] w-full max-w-[300px] mb-9"
+            >
+              <p
+                class="text-center px-5 md:px-6 py-4 md:py-5 text-white md:text-lg"
+              >
+                Scan QR code to get address
+              </p>
+              <img
+                src="/images/qr-code.png"
+                alt="qr code"
+                width="301"
+                height="269"
+                class="w-full rounded-[20px]"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-none flex-col gap-3.5 md:gap-8 max-w-[662px] w-full relative rounded-[20px] outline-1 outline-offset-[-1px] outline-[#220F59] overflow-hidden px-4 pb-4 pt-4 md:pt-8 mb-16"
+          >
+            <p class="text-center text-white md:text-2xl capitalize">
+              Send XRP to MART Pre-Sale Address Below
+            </p>
+            <div
+              class="flex items-center gap-2.5 p-2.5 md:px-4 md:py-4.5 bg-black rounded-[10px] shadow-[0px_0px_91.44390106201172px_0.7398374080657959px_rgba(0,198,145,0.10)] outline outline-offset-[-0.74px] outline-[#393939] overflow-hidden"
+            >
+              <p
+                id="copy-text"
+                class="text-[#cdcdcd] font-normal md:text-2xl capitalize w-full truncate"
+              >
+                rfagt56887hhois9800THFGhjjojGkOK
+              </p>
+              <button
+                id="copy-button"
+                class="w-max px-2 py-4 md:px-5 md:py-5 rounded-[10px] bg-[#2090ff] text-white leading-none flex items-center justify-center gap-1 -outline-offset-1 outline outline-[#ffe1e149]"
+              >
+                <span
+                  class="leading-none whitespace-nowrap text-xs md:text-base"
+                  >Copy Address</span
+                >
+                <svg
+                  width="16"
+                  height="16"
+                  viewbox="0 0 16 16"
+                  class="w-[13px] md:w-auto"
+                >
+                  <use href="/icons.svg#arrow-right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-5 max-w-[354px] md:max-w-[520px] mx-auto items-center text-center"
+          >
+            <h3 class="text-white text-xl md:text-2xl font-semibold font-sora">
+              HOW TO BUY?
+            </h3>
+            <div
+              class="flex flex-col items-center gap-6 text-white text-sm md:text-lg"
+            >
+              <p>
+                1. Acquire XRP from exchanges like Binance or Coinbase, then
+                transfer XRP to your Xaman wallet.
+              </p>
+              <p>
+                2. Scan or copy the provided presale wallet address and send
+                your XRP to the presale address.
+              </p>
+              <p>
+                3. Set your
+                <a href="" class="text-[#2090FF] underline"
+                  >$MART Trustline here</a
+                >
+                to receive tokens. <br />
+                $MART tokens will be airdropped to your wallet upon completion
+                of the presale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script> -->
     <script type="module" src="/src/main.js"></script>
     <script>
       function handleTickInit(tick) {

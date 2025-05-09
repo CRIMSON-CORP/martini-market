@@ -7,9 +7,12 @@ document.querySelectorAll(".highlight-button").forEach((button) => {
   });
 });
 
-document.querySelector(".toggle-side-bar").onclick = function () {
-  this.classList.toggle("open");
-};
+const sideBarToggle = document.querySelector(".toggle-side-bar");
+if (sideBarToggle) {
+  sideBarToggle.onclick = function () {
+    this.classList.toggle("open");
+  };
+}
 
 document.querySelectorAll(".faq-list li").forEach((faqItem) => {
   let isOpen = false;
@@ -23,4 +26,24 @@ document.querySelectorAll(".faq-list li").forEach((faqItem) => {
         faqItem.children[1].scrollHeight + "px";
     }
   };
+});
+
+const copyButton = document.getElementById("copy-button");
+const copyText = document.getElementById("copy-text")?.innerText;
+
+copyButton?.addEventListener("click", () => {
+  window.navigator.clipboard.writeText(copyText).then(() => {
+    alert("Address Copied to Clipboard");
+  });
+});
+
+const openModalButton = document.getElementById("open-modal");
+const closeModalButton = document.querySelector(".close-modal");
+const modal = document.getElementById("modal");
+
+openModalButton?.addEventListener("click", () => {
+  modal?.classList.toggle("open");
+});
+closeModalButton?.addEventListener("click", () => {
+  modal?.classList.remove("open");
 });
