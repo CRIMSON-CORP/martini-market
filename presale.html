@@ -405,7 +405,7 @@
       class="fixed inset-0 bg-black/10 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none [&.open]:opacity-100 [&.open]:pointer-events-auto transition-opacity duration-500 group"
     >
       <div
-        class="w-full max-w-[721px] bg-[#0D0C14] relative bg-[linear-gradient(45deg,#020201a8,#151626ab)] rounded-[20px] outline-2 outline-[#6ddcff] py-5 px-2 md:px-4 scale-125 opacity-0 group-[.open]:opacity-100 group-[.open]:scale-100 transition-[transform,opacity,scale] ease-[cubic-bezier(.1,1,.43,1)] duration-700 group-[.open]:delay-100"
+        class="w-full max-w-[721px] bg-[#0D0C14] relative bg-[linear-gradient(45deg,#020201a8,#151626ab)] h-full md:h-auto md:rounded-[20px] md:outline-2 outline-[#6ddcff] py-5 px-2 md:px-4 scale-125 opacity-0 group-[.open]:opacity-100 group-[.open]:scale-100 transition-[transform,opacity,scale] ease-[cubic-bezier(.1,1,.43,1)] duration-700 group-[.open]:delay-100"
       >
         <div
           class="overflow-hidden absolute top-full left-1/2 -translate-x-1/2 -translate-y-19/20 w-full -z-20"
@@ -415,13 +415,13 @@
           </svg>
         </div>
         <div
-          class="flex flex-col md:px-4 h-[100svh] md:max-h-[90vh] overflow-auto modal-scroll pb-24"
+          class="flex flex-col md:px-4 max-h-[100svh] md:max-h-[90vh] overflow-auto modal-scroll pb-5"
         >
-          <header class="px-8 pt-6 flex justify-end">
-            <button class="relative z-10 close-modal group open">
+          <header class="px-8 flex justify-end">
+            <button class="z-10 close-modal group open absolute top-5 right-8">
               <svg
-                width="45"
-                height="45"
+                width="36"
+                height="36"
                 viewBox="0 0 30 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -458,18 +458,16 @@
               </svg>
             </button>
           </header>
-          <div class="flex flex-col items-center pt-24 md:pt-0">
+          <div class="flex flex-col items-center pt-7 md:pt-0">
             <h2
-              class="text-white text-[40px] font-semibold font-sora text-center mb-9"
+              class="text-white text-xl md:text-3xl font-semibold font-sora text-center mb-3 leading-none"
             >
               Join the MART Pre-Sale
             </h2>
             <div
-              class="overflow-hidden rounded-[20px] outline-2 outline-[#6ddcff] w-full max-w-[300px] mb-9"
+              class="overflow-hidden rounded-[20px] outline-2 outline-[#6ddcff] w-full max-w-[200px] mb-3"
             >
-              <p
-                class="text-center px-5 md:px-6 py-4 md:py-5 text-white md:text-lg"
-              >
+              <p class="text-center px-5 py-3 text-white text-xs">
                 Scan QR code to get address
               </p>
               <img
@@ -482,17 +480,19 @@
             </div>
           </div>
           <div
-            class="flex flex-none flex-col gap-3.5 md:gap-8 max-w-[662px] w-full relative rounded-[20px] outline-1 outline-offset-[-1px] outline-[#220F59] overflow-hidden px-4 pb-4 pt-4 md:pt-8 mb-16"
+            class="flex flex-none flex-col gap-1 max-w-[662px] w-full relative rounded-[20px] outline-1 outline-offset-[-1px] outline-[#220F59] overflow-hidden px-2 pb-2 pt-2 mb-4"
           >
-            <p class="text-center text-white md:text-2xl capitalize">
+            <p
+              class="text-center text-white capitalize text-[10px] md:text-base"
+            >
               Send XRP to MART Pre-Sale Address Below
             </p>
             <div
-              class="flex items-center gap-2.5 p-2.5 md:px-4 md:py-4.5 bg-black rounded-[10px] shadow-[0px_0px_91.44390106201172px_0.7398374080657959px_rgba(0,198,145,0.10)] outline outline-offset-[-0.74px] outline-[#393939] overflow-hidden"
+              class="flex items-center gap-2.5 p-2.5 md:px-4 md:py-2 bg-black rounded-[10px] shadow-[0px_0px_91.44390106201172px_0.7398374080657959px_rgba(0,198,145,0.10)] outline outline-offset-[-0.74px] outline-[#393939] overflow-hidden"
             >
               <p
                 id="copy-text"
-                class="text-[#cdcdcd] font-normal md:text-2xl capitalize w-full truncate"
+                class="text-[#cdcdcd] font-normal text-sm md:text-lg capitalize w-full truncate"
               >
                 rfagt56887hhois9800THFGhjjojGkOK
               </p>
@@ -516,14 +516,12 @@
             </div>
           </div>
           <div
-            class="flex flex-col gap-5 max-w-[354px] md:max-w-[520px] mx-auto items-center text-center"
+            class="flex flex-col gap-2 max-w-[354px] md:max-w-[520px] mx-auto items-center text-center"
           >
-            <h3 class="text-white text-xl md:text-2xl font-semibold font-sora">
+            <h3 class="text-white text-xl md:text-lg font-semibold font-sora">
               HOW TO BUY?
             </h3>
-            <div
-              class="flex flex-col items-center gap-6 text-white text-sm md:text-lg"
-            >
+            <div class="flex flex-col items-center gap-2 text-white text-sm">
               <p>
                 1. Acquire XRP from exchanges like Binance or Coinbase, then
                 transfer XRP to your Xaman wallet.
