@@ -183,3 +183,9 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .tick-label.tick-text {
+    font-size: 12px !important;
+  }
+}
