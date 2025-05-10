@@ -314,7 +314,7 @@
                 class="highlight-button text-body-1 w-full max-w-[203px] rounded-xl p-px"
               >
                 <span
-                  class="rounded-xl flex items-center justify-center gap-1 p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
+                  class="rounded-xl flex whitespace-nowrap items-center justify-center gap-1 p-4 sm:p-5 shadow-[inset_0px_0px_12px_0px_rgba(255,255,255,0.20)]"
                 >
                   <span class="leading-none">Join Presale</span>
                   <svg width="16" height="16">
@@ -324,14 +324,14 @@
               </a>
               <a
                 href="https://t.me/martinimarket"
-                class="w-full p-5 max-w-[203px] rounded-xl bg-[#2090ff] text-white leading-none"
+                class="w-full p-4 sm:p-5 max-w-[203px] whitespace-nowrap rounded-xl bg-[#2090ff] text-white leading-none"
               >
                 Join Telegram
               </a>
             </div>
           </div>
         </div>
-        <div class="container w-[clamp(340px,70%,1346px)] mx-auto relative">
+        <div class="container w-[clamp(320px,70%,1346px)] mx-auto relative">
           <img src="/images/monitor.webp" alt="" width="1346" height="888" />
         </div>
       </section>
@@ -485,7 +485,7 @@
             </p>
           </div>
           <div
-            class="mx-auto w-full flex flex-col gap-16 md:gap-22 items-center"
+            class="mx-auto w-full flex flex-col gap-8 sm:gap-16 md:gap-22 items-center"
           >
             <header class="flex flex-col items-center gap-4 text-center">
               <p
@@ -501,7 +501,7 @@
                 on Martini Market
               </p>
             </header>
-            <div class="flex items-center gap-16">
+            <div class="flex items-center gap-8 md:gap-16">
               <div class="relative self-stretch hidden min-[1186px]:block">
                 <svg
                   width="1417"
@@ -618,49 +618,57 @@
                 />
               </div>
               <div
-                class="grid max-w-[746px] w-full md:grid-cols-[repeat(auto-fit,minmax(0px,343px))] text-center md:text-left gap-x-12 gap-y-10 md:gap-y-16"
+                class="grid max-w-[746px] w-full md:grid-cols-[repeat(auto-fit,minmax(0px,343px))] text-center md:text-left gap-x-12 gap-y-6 sm:gap-y-10 md:gap-y-16"
               >
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-3 md:gap-6">
                   <h3
                     class="text-white text-base md:text-xl font-medium leading-none"
                   >
                     Explore Markets
                   </h3>
-                  <p class="text-xl text-body-3 font-light md:font-normal">
+                  <p
+                    class="text-sm md:text-xl text-body-3 font-light md:font-normal"
+                  >
                     Connect your XRPL wallet and browse live markets across
                     multiple categories — politics, sports, asset prices, and
                     more.
                   </p>
                 </div>
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-3 md:gap-6">
                   <h3
                     class="text-white text-base md:text-xl font-medium leading-none"
                   >
                     Place Your Bets
                   </h3>
-                  <p class="text-xl text-body-3 font-light md:font-normal">
+                  <p
+                    class="text-sm md:text-xl text-body-3 font-light md:font-normal"
+                  >
                     Use XRP to bet on your chosen outcome with our clean,
                     intuitive interface.
                   </p>
                 </div>
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-3 md:gap-6">
                   <h3
                     class="text-white text-base md:text-xl font-medium leading-none"
                   >
                     Monitor & Adjust
                   </h3>
-                  <p class="text-xl text-body-3 font-light md:font-normal">
+                  <p
+                    class="text-sm md:text-xl text-body-3 font-light md:font-normal"
+                  >
                     Track your positions in real time. Buy or sell shares as
                     probabilities shift.
                   </p>
                 </div>
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-3 md:gap-6">
                   <h3
                     class="text-white text-base md:text-xl font-medium leading-none"
                   >
                     Win & Earn
                   </h3>
-                  <p class="text-xl text-body-3 font-light md:font-normal">
+                  <p
+                    class="text-sm md:text-xl text-body-3 font-light md:font-normal"
+                  >
                     In conclusion of each market event, markets settle
                     automatically. Winnings are distributed via smart contracts,
                     fast and trustless.
@@ -791,7 +799,7 @@
         </div>
 
         <div
-          class="max-w-[1031px] mx-auto w-full flex flex-col gap-13 items-center"
+          class="max-w-[1031px] mx-auto w-full flex flex-col gap-6 md:gap-13 items-center"
         >
           <header class="flex flex-col items-center gap-4 text-center">
             <p
@@ -834,27 +842,31 @@
               ></div>
             </div>
             <div
-              class="flex items-stretch justify-center flex-wrap w-full *:max-w-[320px] *:min-h-[420px] *:min-w-[240px] gap-7.5"
+              class="flex items-stretch justify-center flex-wrap w-full *:max-w-[320px] *:md:min-h-[420px] *:min-w-[240px] gap-7.5"
             >
               <div
                 class="w-full border border-[#6ddcff] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
-                <header class="px-9 py-6">
-                  <h3 class="text-body-2 text-2xl font-medium">Q2 - 2025</h3>
+                <header class="px-4 md:px-9 py-2 md:py-6">
+                  <h3 class="text-body-2 md:text-2xl font-medium">Q2 - 2025</h3>
                 </header>
                 <hr class="border-none w-full h-px bg-[#333333]" />
-                <ul class="px-9 py-9 flex flex-col gap-5 text-sm">
+                <ul
+                  class="px-4 md:px-9 py-3 md:py-9 flex flex-col gap-3 md:gap-5 text-sm"
+                >
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">Project Conception</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      Project Conception
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       Social Media & Website Launch
                     </p>
                   </li>
@@ -862,13 +874,15 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">Litepaper Release</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      Litepaper Release
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       $MART Token Presale Round
                     </p>
                   </li>
@@ -880,16 +894,18 @@
               <div
                 class="w-full border border-[#6ddcff] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
-                <header class="px-9 py-6">
-                  <h3 class="text-body-2 text-2xl font-medium">Q3 - 2025</h3>
+                <header class="px-4 md:px-9 py-2 md:py-6">
+                  <h3 class="text-body-2 md:text-2xl font-medium">Q3 - 2025</h3>
                 </header>
                 <hr class="border-none w-full h-px bg-[#333333]" />
-                <ul class="px-9 py-9 flex flex-col gap-5 text-sm">
+                <ul
+                  class="px-4 md:px-9 py-3 md:py-9 flex flex-col gap-3 md:gap-5 text-sm"
+                >
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       Initial Prototype Development
                     </p>
                   </li>
@@ -897,7 +913,7 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       Initial Amas & X Spaces
                     </p>
                   </li>
@@ -905,7 +921,7 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       $MART Token Dex Listing
                     </p>
                   </li>
@@ -913,13 +929,15 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">Testnet Launch</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      Testnet Launch
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       CMC & Coingecko Listing
                     </p>
                   </li>
@@ -927,7 +945,9 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">Strategic Partnerships</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      Strategic Partnerships
+                    </p>
                   </li>
                 </ul>
                 <div
@@ -937,28 +957,34 @@
               <div
                 class="w-full border border-[#6ddcff] isolate relative rounded-[20px] overflow-hidden before:absolute before:inset-0 before:-z-10 before:opacity-[0.16] before:bg-[linear-gradient(45deg,#000000,#53546C)]"
               >
-                <header class="px-9 py-6">
-                  <h3 class="text-body-2 text-2xl font-medium">Q4 - 2025</h3>
+                <header class="px-4 md:px-9 py-2 md:py-6">
+                  <h3 class="text-body-2 md:text-2xl font-medium">Q4 - 2025</h3>
                 </header>
                 <hr class="border-none w-full h-px bg-[#333333]" />
-                <ul class="px-9 py-9 flex flex-col gap-5 text-sm">
+                <ul
+                  class="px-4 md:px-9 py-3 md:py-9 flex flex-col gap-3 md:gap-5 text-sm"
+                >
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">AMA's and X Spaces</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      AMA's and X Spaces
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">Mainnet Launch</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      Mainnet Launch
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">
+                    <p class="text-white font-medium text-sm md:text-base">
                       Strategic Marketing campaign
                     </p>
                   </li>
@@ -966,13 +992,17 @@
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">MART Token Governance</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      MART Token Governance
+                    </p>
                   </li>
                   <li class="flex items-center gap-1.5">
                     <svg width="21" height="21">
                       <use href="/icons.svg#circle-check" />
                     </svg>
-                    <p class="text-white font-medium">CEX Listing</p>
+                    <p class="text-white font-medium text-sm md:text-base">
+                      CEX Listing
+                    </p>
                   </li>
                 </ul>
                 <div
