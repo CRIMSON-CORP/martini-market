@@ -51,6 +51,7 @@ closeModalButton?.addEventListener("click", () => {
 document.querySelectorAll("body > header nav a").forEach((anchor) => {
   anchor.onclick = (event) => {
     event.preventDefault();
+    sideBarToggle.classList.remove("open");
     const tag = anchor.href.split("/").at(-1).substring(1);
 
     const element = document.getElementById(tag);
