@@ -47,3 +47,18 @@ openModalButton?.addEventListener("click", () => {
 closeModalButton?.addEventListener("click", () => {
   modal?.classList.remove("open");
 });
+
+document.querySelectorAll("body > header nav a").forEach((anchor) => {
+  anchor.onclick = (event) => {
+    event.preventDefault();
+    const tag = anchor.href.split("/").at(-1).substring(1);
+
+    const element = document.getElementById(tag);
+
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+});
