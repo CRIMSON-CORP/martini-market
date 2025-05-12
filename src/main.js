@@ -48,18 +48,20 @@ closeModalButton?.addEventListener("click", () => {
   modal?.classList.remove("open");
 });
 
-document.querySelectorAll("body > header nav a").forEach((anchor) => {
-  anchor.onclick = (event) => {
-    event.preventDefault();
-    sideBarToggle.classList.remove("open");
-    const tag = anchor.href.split("/").at(-1).substring(1);
+document
+  .querySelectorAll("body > header nav a.internal-nav")
+  .forEach((anchor) => {
+    anchor.onclick = (event) => {
+      event.preventDefault();
+      sideBarToggle.classList.remove("open");
+      const tag = anchor.href.split("/").at(-1).substring(1);
 
-    const element = document.getElementById(tag);
+      const element = document.getElementById(tag);
 
-    if (!element) return;
+      if (!element) return;
 
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-});
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    };
+  });
